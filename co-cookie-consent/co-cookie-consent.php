@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              https://www.affinity-digital.com
- * @since             1.0.0
+ * @since             1.0.1
  * @package           Co_Cookie_Consent
  *
  * @wordpress-plugin
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'CO_COOKIE_CONSENT_VERSION', '1.0.0' );
+define( 'CO_COOKIE_CONSENT_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.
