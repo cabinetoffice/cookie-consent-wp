@@ -438,7 +438,7 @@ Cookies are small text files containing a string of characters that can be place
 
 == Appendix 3 ==
 
-(Note: This is taken from the Civil Service Commission website, some sections will not be relevant to your site e.g. Homepage Twitter timeline)
+(Note: This was developed for a specific service, so some sections will not be relevant to your site e.g. Homepage Twitter timeline)
 
 [cookiepreferencesconfirm]
 Preference Centre
