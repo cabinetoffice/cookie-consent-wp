@@ -31,7 +31,7 @@ Suggested URL: cookie-policy
 
 
 Example content - see Appendix 1: 
-(Note: This is taken from the Civil Service Commission website, some sections will not be relevant to your site. Please replace [Service Name] with your service. E.g. Civil Service Commission)
+(Note: This plugin was developed for a specific website, so some sections will not be relevant to your site. Please replace [Service Name] with your service.)
 
 Example content with markup, see Appendix 2
 
