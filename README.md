@@ -78,9 +78,9 @@ Cookie Notice
 
 Example content
 
-[Service Name] uses cookies to make the site work better for you. Some of these are essential to how the site functions and others are optional. Optional cookies help us remember your settings, measure your use of the site and personalise how we communicate with you. Any data collected is anonymised and we do not set optional cookies unless you consent.
+[Service Name] uses cookies to make the site work better for you. Some of these cookies are essential to how the site functions and others are optional. Optional cookies help us remember your settings, measure your use of the site and personalise how we communicate with you. Any data collected is anonymised and we do not set optional cookies unless you consent.
 
-The text “Some of these are essential to how the site functions and others are optional.” should be linked to the Cookie Policy page using the link facility on the WYSIWYG
+The text “Some of these cookies are essential to how the site functions and others are optional.” should be linked to the Cookie Policy page using the link facility on the WYSIWYG
 
 We recommend that there should be no other formatting used.
 
