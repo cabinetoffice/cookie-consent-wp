@@ -31,7 +31,7 @@ Suggested URL: cookie-policy
 
 
 Example content - see Appendix 1: 
-(Note: This is taken from the Civil Service Commission website, some sections will not be relevant to your site. Please replace [Service Name] with your service. E.g. Civil Service Commission)
+(Note: This plugin was developed for a specific website, so some sections will not be relevant to your site. Please replace [Service Name] with your service.)
 
 Example content with markup, see Appendix 2
 
@@ -78,9 +78,9 @@ Cookie Notice
 
 Example content
 
-[Service Name] uses cookies to make the site work better for you. Some of these are essential to how the site functions and others are optional. Optional cookies help us remember your settings, measure your use of the site and personalise how we communicate with you. Any data collected is anonymised and we do not set optional cookies unless you consent.
+[Service Name] uses cookies to make the site work better for you. Some of these cookies are essential to how the site functions and others are optional. Optional cookies help us remember your settings, measure your use of the site and personalise how we communicate with you. Any data collected is anonymised and we do not set optional cookies unless you consent.
 
-The text “Some of these are essential to how the site functions and others are optional.” should be linked to the Cookie Policy page using the link facility on the WYSIWYG
+The text “Some of these cookies are essential to how the site functions and others are optional.” should be linked to the Cookie Policy page using the link facility on the WYSIWYG
 
 We recommend that there should be no other formatting used.
 
@@ -438,7 +438,7 @@ Cookies are small text files containing a string of characters that can be place
 
 == Appendix 3 ==
 
-(Note: This is taken from the Civil Service Commission website, some sections will not be relevant to your site e.g. Homepage Twitter timeline)
+(Note: This was developed for a specific service, so some sections will not be relevant to your site e.g. Homepage Twitter timeline)
 
 [cookiepreferencesconfirm]
 Preference Centre
