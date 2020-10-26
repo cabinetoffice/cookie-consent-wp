@@ -1,5 +1,5 @@
 {
-    "name"       : "co-cookie-consent",
+    "name"       : "cabinet-office/co-cookie-consent",
     "description": "Cookie Consent plugin for Cabinet Office",
     "keywords"   : ["wordpress"],
     "type"       : "wordpress-plugin",
