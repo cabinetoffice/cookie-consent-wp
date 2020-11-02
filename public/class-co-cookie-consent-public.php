@@ -117,6 +117,20 @@ class Co_Cookie_Consent_Public {
 	} // 
 
 	/**
+	 * Add a class to the body tag when banner displays
+	 *
+	 * @since    1.0.3
+	 */
+	public function my_body_classes( $classes ) {
+		$cookie_name = 'cookie_policy';
+		if(!isset($_COOKIE[$cookie_name])) {
+			$classes[] = 'co-cookie-consent';
+		}
+		 
+		return $classes;
+		 
+	}
+	/**
 	* Registers all shortcodes at once
 	*
 	* @return [type] [description]
