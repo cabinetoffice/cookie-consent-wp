@@ -213,7 +213,7 @@ Last updated 18 June 2019
 Example content with styling / Markup
 
 <p class="govuk-body">[Service Name] puts small files (known as ‘cookies’) onto your computer to collect information about how you browse the site.</p>
-Cookies are small text files containing a string of characters that can be placed on your computer or mobile device that uniquely identify your browser or device. Cookies tell us if your computer or device has visited the site before. They help us understand how the site is being used, help you navigate between pages efficiently, help remember your preferences, and generally improve your browsing experience.</p>
+<p>Cookies are small text files containing a string of characters that can be placed on your computer or mobile device that uniquely identify your browser or device. Cookies tell us if your computer or device has visited the site before. They help us understand how the site is being used, help you navigate between pages efficiently, help remember your preferences, and generally improve your browsing experience.</p>
 
 <p>Cookies help us remember what notifications we send you and make our general communications relevant to you and your interests. Changes made to this policy can be identified by the ‘last updated’ date at the bottom of this page. Any changes to how your cookie data is processed will be promptly reflected in this policy and will immediately apply to you and your data. If these changes affect how your data is processed, the [Service Name] will take reasonable steps to let you know. </p>
 

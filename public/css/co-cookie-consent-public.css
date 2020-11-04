@@ -8,13 +8,11 @@
  div.gem-c-cookie-banner {
     background-color: #f8f8f8;
     box-sizing: border-box;
-	padding-bottom: 10px;
   	width: 100%;
 }
 .govuk-width-container {
     margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
+    padding:0 20px 10px;
 	max-width: 1200px;
 }
 .gem-c-cookie-banner__message {
@@ -37,7 +35,6 @@
     -webkit-appearance: none;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
-    font-size: 1rem;
     line-height: 1.1875;
     box-sizing: border-box;
     padding: 8px 10px 7px;
