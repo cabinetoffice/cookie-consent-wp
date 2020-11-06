@@ -151,7 +151,9 @@ class Co_Cookie_Consent_Public {
 
 	public function cookie_preferences( ) {
 
-		include 'partials/co-cookie-consent-public-display.php';
+		ob_start();
+    	include 'partials/co-cookie-consent-public-display.php';
+    	return ob_get_clean();
 		$more_js ='<script type="text/javascript">
 		function setupPrefRadio(name, optedIn) {
 		  let radioButton = document.getElementById(name + (optedIn ? "-on" : "-off"));
@@ -180,7 +182,7 @@ class Co_Cookie_Consent_Public {
 		  document.getElementById("global-cookie-confirm").style.display = "none";
 		  window.scrollTo(0,0);
 		};</script>';
-		echo $more_js;
+		return $more_js;
 
 	} //
 	/**
@@ -194,7 +196,9 @@ class Co_Cookie_Consent_Public {
 
 	public function cookie_preferences_confirm( ) {
 
-		include 'partials/co-cookie-consent-public-confirm.php';
+		ob_start();
+    	include 'partials/co-cookie-consent-public-confirm.php';
+    	return ob_get_clean();
 
 	} //
 }
