@@ -164,7 +164,7 @@ class Co_Cookie_Consent_Public {
 		
 		let policy = retrieveCookiePolicy();
 		//setupPrefRadio("cookie-settings", policy.settings);
-		setupPrefRadio("cookie-website", policy.usage);
+		setupPrefRadio("cookie-website", policy.settings);
 		//setupPrefRadio("cookie-comms", policy.campaigns);
 		
 		let btnSave = document.getElementById("btn-save");
