@@ -188,6 +188,7 @@ class Co_Cookie_Consent {
 			 * @since    1.0.3
 			 */
 		$this->loader->add_filter( 'body_class', $plugin_public, 'my_body_classes' );
+		$this->loader->add_action( 'init', $plugin_public, 'prefix_register_resources' );
 		/**
 		 * Loops through page code, looks for the body tag and places Cookie notice after this
 		 * Required to do it using this method as other method was dependant on later version of Wordpress
