@@ -223,7 +223,7 @@ class Co_Cookie_Consent {
 			</div>
 			<div id="global-cookie-reject" class="gem-c-cookie-banner__confirmation govuk-width-container" tabindex="-1" style="display: none;">
 				<p class="gem-c-cookie-banner__confirmation-message">
-					You\'ve accepted all cookies. You can <a class="govuk-link" href="' . $preference_link . '" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation">change your cookie settings</a> at any time.
+					You\'ve rejected all optional cookies. You can <a class="govuk-link" href="' . $preference_link . '" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation">change your cookie settings</a> at any time.
 				</p>
 				<button id="btn-hide-cookie-confirm" class="govuk-button gem-c-button--inline" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide Cookie Message</button>
 			</div>
