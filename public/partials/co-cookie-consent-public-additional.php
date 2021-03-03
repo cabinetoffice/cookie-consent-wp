@@ -83,6 +83,7 @@ function setupCookieChoices() {
 	let cookieMsg = document.getElementById("global-cookie-message");
 	let cookieConfirm = document.getElementById("global-cookie-confirm");
 	let cookieAcceptButton = document.getElementById("btn-accept-cookies");
+	let cookieRejectButton = document.getElementById("btn-reject-cookies");
 	let cookieSettingsButton = document.getElementById("btn-cookie-settings");
 	let cookieHideConfirmButton = document.getElementById("btn-hide-cookie-confirm");
 
