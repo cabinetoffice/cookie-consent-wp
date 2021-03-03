@@ -80,7 +80,7 @@ class Co_Cookie_Consent_Public {
 	/**
 	 * Register the JavaScript for the public-facing side of the site.
 	 *
-	 * @since    1.0.0
+	 * @since    2.0.0
 	 */
 	public function enqueue_scripts() {
 
@@ -105,6 +105,7 @@ class Co_Cookie_Consent_Public {
 	public function addcookiescript() {
 		$options = get_option('co_cookie_consent_display_options');
 		$google_tag_id = esc_html( $options['google_tag_id'] );
+		$preference_link = esc_attr( $display_options['preference_link'] );
 		include 'partials/co-cookie-consent-public-additional.php';
 	} // 
 

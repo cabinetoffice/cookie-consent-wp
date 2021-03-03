@@ -70,7 +70,7 @@ class Co_Cookie_Consent {
 		if ( defined( 'CO_COOKIE_CONSENT_VERSION' ) ) {
 			$this->version = CO_COOKIE_CONSENT_VERSION;
 		} else {
-			$this->version = '1.0.0';
+			$this->version = '2.0.0';
 		}
 		$this->plugin_name = 'co-cookie-consent';
 
@@ -210,6 +210,7 @@ class Co_Cookie_Consent {
 				  <!--form style="display: inline" action="/preference-centre/"-->
 				  <div class="gem-c-cookie-banner__buttons">
 					<button id="btn-accept-cookies" class="govuk-button govuk-button--secondary" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted">Accept all cookies</button>
+					<button id="btn-accept-cookies" class="govuk-button govuk-button--secondary" type="submit" data-module="track-click" data-accept-cookies="false" data-track-category="cookieBanner" data-track-action="Cookie banner rejected">Reject optional cookies</button>
 					<button id="btn-cookie-settings" class="govuk-button govuk-button--secondary gem-c-button--inline" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked">Set cookie preferences</button>
 				  </div>
 				<!--/form-->

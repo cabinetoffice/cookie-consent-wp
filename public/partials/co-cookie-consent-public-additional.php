@@ -5,7 +5,7 @@
  *
  *
  * @link       https://www.affinity-digital.com
- * @since      1.0.0
+ * @since      2.0.0
  *
  * @package    Co_Cookie_Consent
  * @subpackage Co_Cookie_Consent/public/partials
@@ -97,8 +97,13 @@ function setupCookieChoices() {
 		cookieConfirm.style.display = "block";
 	}
 
+	cookieRejectButton.onclick = function() {
+		storeCookiePolicy(false, false, false, false);
+		cookieMsg.style.display = "none";
+		cookieConfirm.style.display = "block";
+	}
 	cookieSettingsButton.onclick = function() {
-		location.href = "/preference-centre/";
+		location.href = "<?php echo $preference_link;?>";
 	}
 	cookieHideConfirmButton.onclick = function() {
 		cookieConfirm.style.display = "none";
