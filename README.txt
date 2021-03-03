@@ -434,7 +434,7 @@ Example content with styling / Markup
 <p class="govuk-body">You can <a class="govuk-link" href="/preference-centre/">change which cookies you’re happy for us to use</a>.</p>
 <p class="govuk-body">Last updated 18 June 2019</p>
 
-
+Lets us know that you’ve seen our cookie message
 
 == Appendix 3 ==
 

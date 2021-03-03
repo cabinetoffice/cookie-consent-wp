@@ -8,7 +8,9 @@
  div.gem-c-cookie-banner {
     background-color: #f8f8f8;
     box-sizing: border-box;
-  	width: 100%;
+      width: 100%;
+      z-index: 10;
+      position: relative;
 }
 .govuk-width-container {
     margin: 0 auto;
