@@ -4,7 +4,7 @@ function setupPrefRadio(name, optedIn) {
 }
 
 function getPrefRadio(name) {
-  return document.querySelector('input[name="' + name + '"]:checked').value === "on";
+    return document.querySelector('input[name="' + name + '"]:checked').value === "on";
 }
 
 let policy = retrieveCookiePolicy();
@@ -16,9 +16,9 @@ let btnSave = document.getElementById("btn-save");
 btnSave.onclick = function() {
   storeCookiePolicy(
   true,
-  getPrefRadio("cookie-settings"),
+  //getPrefRadio("cookie-settings"),
   getPrefRadio("cookie-website"),
-  getPrefRadio("cookie-comms")
+  //getPrefRadio("cookie-comms")
   );
   document.getElementById("save_confirm").style.display = "block";
   document.getElementById("global-cookie-message").style.display = "none";

@@ -37,12 +37,12 @@ function readCookie(name) {
 	return null;
 }
 
-function storeCookiePolicy(essential, settings, usage, campaigns) {
+function storeCookiePolicy(essential, usage) {
 	createCookie("cookie_policy", JSON.stringify({
 		"essential": essential,
-		"settings": settings,
+		//"settings": settings,
 		"usage": usage,
-		"campaigns": campaigns
+		//"campaigns": campaigns
 	}));
 }
 
@@ -54,7 +54,7 @@ function retrieveCookiePolicy() {
 	let cookiePolicy = readCookie("cookie_policy");
 	return cookiePolicy
 		? JSON.parse(cookiePolicy)
-		: { "essential": false, "settings": false, "usage": false };
+		: { "essential": false, "usage": false };
 }
 
 function gtag() {
@@ -94,19 +94,17 @@ function setupCookieChoices() {
 	}
 
 	cookieAcceptButton.onclick = function() {
-		storeCookiePolicy(true, true, true, true);
+		storeCookiePolicy(true, true);
 		cookieMsg.style.display = "none";
 		cookieConfirm.style.display = "block";
 	}
 
 	cookieRejectButton.onclick = function() {
-		storeCookiePolicy(true, false, false, false);
+		storeCookiePolicy(true, false);
 		cookieMsg.style.display = "none";
 		cookieReject.style.display = "block";
 	}
-	cookieSettingsButton.onclick = function() {
-		location.href = "<?php echo $preference_link;?>";
-	}
+
 	cookieHideConfirmButton.onclick = function() {
 		cookieConfirm.style.display = "none";
 	}
