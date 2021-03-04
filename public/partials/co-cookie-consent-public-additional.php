@@ -87,6 +87,7 @@ function setupCookieChoices() {
 	let cookieRejectButton = document.getElementById("btn-reject-cookies");
 	let cookieSettingsButton = document.getElementById("btn-cookie-settings");
 	let cookieHideConfirmButton = document.getElementById("btn-hide-cookie-confirm");
+	let cookieHideRejectButton = document.getElementById("btn-hide-cookie-confirm-reject");
 
 	let cookiePolicy = retrieveCookiePolicy();
 	if (!cookiePolicy || !cookiePolicy.essential) {
@@ -107,6 +108,10 @@ function setupCookieChoices() {
 
 	cookieHideConfirmButton.onclick = function() {
 		cookieConfirm.style.display = "none";
+	}
+
+	cookieHideRejectButton.onclick = function() {
+		cookieReject.style.display = "none";
 	}
 }
 

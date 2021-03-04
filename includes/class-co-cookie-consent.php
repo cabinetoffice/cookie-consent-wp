@@ -229,7 +229,7 @@ class Co_Cookie_Consent {
 				<p class="gem-c-cookie-banner__confirmation-message">
 					You\'ve rejected all optional cookies. You can <a class="govuk-link" href="' . $preference_link . '" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation">change your cookie settings</a> at any time.
 				</p>
-				<button id="btn-hide-cookie-confirm" class="govuk-button gem-c-button--inline" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide Cookie Message</button>
+				<button id="btn-hide-cookie-confirm-reject" class="govuk-button gem-c-button--inline" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide Cookie Message</button>
 			</div>
 		</div>';
 			$buffer = preg_replace( '/(\<body.*\>)/', '$1' . $after_body, $buffer );
