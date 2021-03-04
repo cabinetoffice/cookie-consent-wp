@@ -100,9 +100,9 @@ function setupCookieChoices() {
 	}
 
 	cookieRejectButton.onclick = function() {
-		storeCookiePolicy(false, false, false, false);
+		storeCookiePolicy(true, false, false, false);
 		cookieMsg.style.display = "none";
-		cookieConfirm.style.display = "block";
+		cookieReject.style.display = "block";
 	}
 	cookieSettingsButton.onclick = function() {
 		location.href = "<?php echo $preference_link;?>";

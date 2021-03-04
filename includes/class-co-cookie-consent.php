@@ -211,8 +211,12 @@ class Co_Cookie_Consent {
 				  <div class="gem-c-cookie-banner__buttons">
 					<button id="btn-accept-cookies" class="govuk-button govuk-button--secondary" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted">Accept all cookies</button>
 					<button id="btn-reject-cookies" class="govuk-button govuk-button--secondary" type="submit" data-module="track-click" data-accept-cookies="false" data-track-category="cookieBanner" data-track-action="Cookie banner rejected">Reject optional cookies</button>
-					<button id="btn-cookie-settings" class="govuk-button govuk-button--secondary gem-c-button--inline" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked">Set cookie preferences</button>
-				  </div>
+					<div style="padding-top:8px; display:inline-block;">
+					<a class="govuk-link" data-module="govuk-button" href="' . $preference_link . '">
+						Set cookie preferences
+					</a>
+				</div>
+					</div>
 				<!--/form-->
 			</div>
 			<div id="global-cookie-confirm" class="gem-c-cookie-banner__confirmation govuk-width-container" tabindex="-1" style="display: none;">
