@@ -16,9 +16,9 @@ let btnSave = document.getElementById("btn-save");
 btnSave.onclick = function() {
   storeCookiePolicy(
   true,
-  //getPrefRadio("cookie-settings"),
+  getPrefRadio("cookie-settings"),
   getPrefRadio("cookie-website"),
-  //getPrefRadio("cookie-comms")
+  getPrefRadio("cookie-comms")
   );
   document.getElementById("save_confirm").style.display = "block";
   document.getElementById("global-cookie-message").style.display = "none";
