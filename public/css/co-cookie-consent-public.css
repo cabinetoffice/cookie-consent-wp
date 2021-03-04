@@ -218,3 +218,7 @@ input[type=radio]:checked ~ label {
 	    margin-top: 0px;
 	}
 }
+
+.is-IE .govuk-radios__item label {
+    margin-left:30px;
+}

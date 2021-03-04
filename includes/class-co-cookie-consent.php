@@ -70,7 +70,7 @@ class Co_Cookie_Consent {
 		if ( defined( 'CO_COOKIE_CONSENT_VERSION' ) ) {
 			$this->version = CO_COOKIE_CONSENT_VERSION;
 		} else {
-			$this->version = '1.0.0';
+			$this->version = '2.0.0';
 		}
 		$this->plugin_name = 'co-cookie-consent';
 
@@ -210,13 +210,24 @@ class Co_Cookie_Consent {
 				  <!--form style="display: inline" action="/preference-centre/"-->
 				  <div class="gem-c-cookie-banner__buttons">
 					<button id="btn-accept-cookies" class="govuk-button govuk-button--secondary" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner accepted">Accept all cookies</button>
-					<button id="btn-cookie-settings" class="govuk-button govuk-button--secondary gem-c-button--inline" type="submit" data-module="track-click" data-accept-cookies="true" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked">Set cookie preferences</button>
-				  </div>
+					<button id="btn-reject-cookies" class="govuk-button govuk-button--secondary" type="submit" data-module="track-click" data-accept-cookies="false" data-track-category="cookieBanner" data-track-action="Cookie banner rejected">Reject optional cookies</button>
+					<div style="padding-top:8px; display:inline-block;">
+					<a class="govuk-link" data-module="govuk-button" href="' . $preference_link . '">
+						Set cookie preferences
+					</a>
+				</div>
+					</div>
 				<!--/form-->
 			</div>
 			<div id="global-cookie-confirm" class="gem-c-cookie-banner__confirmation govuk-width-container" tabindex="-1" style="display: none;">
 				<p class="gem-c-cookie-banner__confirmation-message">
 					You\'ve accepted all cookies. You can <a class="govuk-link" href="' . $preference_link . '" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation">change your cookie settings</a> at any time.
+				</p>
+				<button id="btn-hide-cookie-confirm" class="govuk-button gem-c-button--inline" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide Cookie Message</button>
+			</div>
+			<div id="global-cookie-reject" class="gem-c-cookie-banner__confirmation govuk-width-container" tabindex="-1" style="display: none;">
+				<p class="gem-c-cookie-banner__confirmation-message">
+					You\'ve rejected all optional cookies. You can <a class="govuk-link" href="' . $preference_link . '" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation">change your cookie settings</a> at any time.
 				</p>
 				<button id="btn-hide-cookie-confirm" class="govuk-button gem-c-button--inline" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide Cookie Message</button>
 			</div>

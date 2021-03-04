@@ -5,7 +5,7 @@
  *
  *
  * @link       https://www.affinity-digital.com
- * @since      1.0.0
+ * @since      2.0.0
  *
  * @package    Co_Cookie_Consent
  * @subpackage Co_Cookie_Consent/public/partials
@@ -37,12 +37,12 @@ function readCookie(name) {
 	return null;
 }
 
-function storeCookiePolicy(essential, settings, usage, campaigns) {
+function storeCookiePolicy(essential, usage) {
 	createCookie("cookie_policy", JSON.stringify({
 		"essential": essential,
-		"settings": settings,
+		//"settings": settings,
 		"usage": usage,
-		"campaigns": campaigns
+		//"campaigns": campaigns
 	}));
 }
 
@@ -54,7 +54,7 @@ function retrieveCookiePolicy() {
 	let cookiePolicy = readCookie("cookie_policy");
 	return cookiePolicy
 		? JSON.parse(cookiePolicy)
-		: { "essential": false, "settings": false, "usage": false };
+		: { "essential": false, "usage": false };
 }
 
 function gtag() {
@@ -82,7 +82,9 @@ function setupGoogleAnalyticsTagIfOptedIn() {
 function setupCookieChoices() {
 	let cookieMsg = document.getElementById("global-cookie-message");
 	let cookieConfirm = document.getElementById("global-cookie-confirm");
+	let cookieReject = document.getElementById("global-cookie-reject");
 	let cookieAcceptButton = document.getElementById("btn-accept-cookies");
+	let cookieRejectButton = document.getElementById("btn-reject-cookies");
 	let cookieSettingsButton = document.getElementById("btn-cookie-settings");
 	let cookieHideConfirmButton = document.getElementById("btn-hide-cookie-confirm");
 
@@ -92,14 +94,17 @@ function setupCookieChoices() {
 	}
 
 	cookieAcceptButton.onclick = function() {
-		storeCookiePolicy(true, true, true, true);
+		storeCookiePolicy(true, true);
 		cookieMsg.style.display = "none";
 		cookieConfirm.style.display = "block";
 	}
 
-	cookieSettingsButton.onclick = function() {
-		location.href = "/preference-centre/";
+	cookieRejectButton.onclick = function() {
+		storeCookiePolicy(true, false);
+		cookieMsg.style.display = "none";
+		cookieReject.style.display = "block";
 	}
+
 	cookieHideConfirmButton.onclick = function() {
 		cookieConfirm.style.display = "none";
 	}

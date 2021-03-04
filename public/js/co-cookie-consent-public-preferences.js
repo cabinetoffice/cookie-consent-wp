@@ -1,10 +1,11 @@
 function setupPrefRadio(name, optedIn) {
+  
   let radioButton = document.getElementById(name + (optedIn ? "-on" : "-off"));
   radioButton.checked = true;
 }
 
 function getPrefRadio(name) {
-  return document.querySelector('input[name="' + name + '"]:checked').value === "on";
+    return document.querySelector('input[name="' + name + '"]:checked').value === "on";
 }
 
 let policy = retrieveCookiePolicy();
@@ -15,9 +16,9 @@ setupPrefRadio("cookie-website", policy.usage);
 let btnSave = document.getElementById("btn-save");
 btnSave.onclick = function() {
   storeCookiePolicy(
-  true,
+  true, 
   //getPrefRadio("cookie-settings"),
-  getPrefRadio("cookie-website"),
+  getPrefRadio("cookie-website")
   //getPrefRadio("cookie-comms")
   );
   document.getElementById("save_confirm").style.display = "block";
