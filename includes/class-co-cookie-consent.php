@@ -70,7 +70,7 @@ class Co_Cookie_Consent {
 		if ( defined( 'CO_COOKIE_CONSENT_VERSION' ) ) {
 			$this->version = CO_COOKIE_CONSENT_VERSION;
 		} else {
-			$this->version = '2.1';
+			$this->version = '2.2';
 		}
 		$this->plugin_name = 'co-cookie-consent';
 
