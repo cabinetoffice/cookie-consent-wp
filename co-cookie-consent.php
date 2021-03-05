@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://www.affinity-digital.com
- * @since             2.0.1
+ * @since             2.1
  * @package           Co_Cookie_Consent
  *
  * @wordpress-plugin
  * Plugin Name:       Cabinet Office Cookie Consent
  * Plugin URI:        https://www.affinity-digital.com
  * Description:       Cabinet Office Cookie Consent Plugin
- * Version:           2.0.1
+ * Version:           2.1
  * Author:            Affinity Digital
  * Author URI:        https://www.affinity-digital.com
  * License:           GPL-2.0+
@@ -33,7 +33,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'CO_COOKIE_CONSENT_VERSION', '2.0.1' );
+define( 'CO_COOKIE_CONSENT_VERSION', '2.1' );
 
 /**
  * The code that runs during plugin activation.
