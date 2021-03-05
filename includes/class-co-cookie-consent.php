@@ -64,13 +64,13 @@ class Co_Cookie_Consent {
 	 * Load the dependencies, define the locale, and set the hooks for the admin area and
 	 * the public-facing side of the site.
 	 *
-	 * @since    1.0.0
+	 * @since    2.0.1
 	 */
 	public function __construct() {
 		if ( defined( 'CO_COOKIE_CONSENT_VERSION' ) ) {
 			$this->version = CO_COOKIE_CONSENT_VERSION;
 		} else {
-			$this->version = '2.0.0';
+			$this->version = '2.0.1';
 		}
 		$this->plugin_name = 'co-cookie-consent';
 
@@ -229,7 +229,7 @@ class Co_Cookie_Consent {
 				<p class="gem-c-cookie-banner__confirmation-message">
 					You\'ve rejected all optional cookies. You can <a class="govuk-link" href="' . $preference_link . '" data-module="track-click" data-track-category="cookieBanner" data-track-action="Cookie banner settings clicked from confirmation">change your cookie settings</a> at any time.
 				</p>
-				<button id="btn-hide-cookie-confirm-reject" class="govuk-button gem-c-button--inline" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide Cookie Message</button>
+				<button id="btn-hide-cookie-reject" class="govuk-button gem-c-button--inline" data-hide-cookie-banner="true" data-module="track-click" data-track-category="cookieBanner" data-track-action="Hide cookie banner">Hide Cookie Message</button>
 			</div>
 		</div>';
 			$buffer = preg_replace( '/(\<body.*\>)/', '$1' . $after_body, $buffer );
