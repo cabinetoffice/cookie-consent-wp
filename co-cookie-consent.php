@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              https://www.affinity-digital.com
- * @since             2.2
+ * @since             2.2.1
  * @package           Co_Cookie_Consent
  *
  * @wordpress-plugin
@@ -33,7 +33,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'CO_COOKIE_CONSENT_VERSION', '2.2' );
+define( 'CO_COOKIE_CONSENT_VERSION', '2.2.1' );
 
 /**
  * The code that runs during plugin activation.

@@ -64,13 +64,13 @@ class Co_Cookie_Consent {
 	 * Load the dependencies, define the locale, and set the hooks for the admin area and
 	 * the public-facing side of the site.
 	 *
-	 * @since    2.1
+	 * @since    2.2.1
 	 */
 	public function __construct() {
 		if ( defined( 'CO_COOKIE_CONSENT_VERSION' ) ) {
 			$this->version = CO_COOKIE_CONSENT_VERSION;
 		} else {
-			$this->version = '2.2';
+			$this->version = '2.2.1';
 		}
 		$this->plugin_name = 'co-cookie-consent';
 

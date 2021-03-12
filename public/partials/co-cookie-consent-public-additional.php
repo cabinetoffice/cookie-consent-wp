@@ -5,7 +5,7 @@
  *
  *
  * @link       https://www.affinity-digital.com
- * @since      2.2
+ * @since      2.2.1
  *
  * @package    Co_Cookie_Consent
  * @subpackage Co_Cookie_Consent/public/partials

@@ -14,14 +14,12 @@ jQuery(document).ready(function($) {
 		},
 		beforeSend: function ()
 		{
-			console.log('sending');
 			$("#create-post").html("Saving");
 			$('#create-post').prop('disabled', true);
 			$('#setting-error-settings_updated').detach();
 		},
 		success: function(data)
 		{
-			console.log('yay');
 			$("#create-post").html("Save Changes");
 			$('#create-post').prop('disabled', false);
 			var success_mess ='<div id="setting-error-settings_updated" class="notice notice-success settings-error is-dismissible"><p><strong>Saved.</strong></p><button type="button" class="notice-dismiss"><span class="screen-reader-text">Dismiss this notice.</span></button></div>';
@@ -29,7 +27,6 @@ jQuery(document).ready(function($) {
 		},
 		error: function()
 		{
-			console.log('nay');
 
 		}
 	})
