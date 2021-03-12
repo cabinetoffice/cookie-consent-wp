@@ -80,7 +80,7 @@ class Co_Cookie_Consent_Public {
 	/**
 	 * Register the JavaScript for the public-facing side of the site.
 	 *
-	 * @since    2.0.0
+	 * @since    2.2.1
 	 */
 	public function enqueue_scripts() {
 
@@ -94,8 +94,8 @@ class Co_Cookie_Consent_Public {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/co-cookie-consent-public.js', array( 'jquery' ), $this->version, false, true );
+		/* Not required for this v*/
+		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/co-cookie-consent-public.js', array( 'jquery' ), $this->version, false, true );
 
 	}
 	/**
