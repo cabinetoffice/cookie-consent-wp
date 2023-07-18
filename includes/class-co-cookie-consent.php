@@ -70,7 +70,7 @@ class Co_Cookie_Consent {
 		if ( defined( 'CO_COOKIE_CONSENT_VERSION' ) ) {
 			$this->version = CO_COOKIE_CONSENT_VERSION;
 		} else {
-			$this->version = '2.2.1';
+			$this->version = '2.2.2';
 		}
 		$this->plugin_name = 'co-cookie-consent';
 
@@ -204,6 +204,7 @@ class Co_Cookie_Consent {
 			foreach ( $notices as $notice ){
 					$cookie_notice = $notice->post_content;
 			}
+			$after_body = "";
 			$after_body.='<div class="gem-c-cookie-banner" data-module="cookie-banner" role="region" aria-label="cookie banner" >
 			<div id="global-cookie-message" class="gem-c-cookie-banner__wrapper govuk-width-container" style="display: none;">
 				<p class="gem-c-cookie-banner__message">' . $cookie_notice . '</p>
