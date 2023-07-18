@@ -105,7 +105,9 @@ class Co_Cookie_Consent_Public {
 	public function addcookiescript() {
 		$options = get_option('co_cookie_consent_display_options');
 		$google_tag_id = esc_html( $options['google_tag_id'] );
-		$preference_link = esc_attr( $display_options['preference_link'] );
+		if( isset( $options['preference_link'] ) ) {
+			$preference_link = esc_attr( $options['preference_link'] );
+		}
 		include 'partials/co-cookie-consent-public-additional.php';
 	} // 
 
